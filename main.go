@@ -52,7 +52,7 @@ func main() {
 		case "POST":
 			cres, err = cc.Post(targetUrl.String())
 		case "PUT":
-			cres, err = cc.Post(targetUrl.String())
+			cres, err = cc.Put(targetUrl.String())
 		default:
 			fmt.Printf("Method %s proxying not supported, TODO", c.Method())
 			return c.SendStatus(500)
